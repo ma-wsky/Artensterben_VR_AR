@@ -28574,6 +28574,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 934805285}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5033a643d9471cc43985fb925a97c4c0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 934805287}
   m_SourcePrefab: {fileID: 100100000, guid: 5033a643d9471cc43985fb925a97c4c0, type: 3}
 --- !u!4 &692085388 stripped
 Transform:
@@ -37892,6 +37896,23 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.648503, y: 9.5, z: 5.16139}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!111 &934805287
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 934805283}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 5138602965388526686, guid: 5033a643d9471cc43985fb925a97c4c0,
+    type: 3}
+  m_Animations:
+  - {fileID: 5138602965388526686, guid: 5033a643d9471cc43985fb925a97c4c0, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &938353678
 GameObject:
   m_ObjectHideFlags: 0
