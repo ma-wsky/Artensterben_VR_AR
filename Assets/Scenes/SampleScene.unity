@@ -53090,7 +53090,7 @@ MonoBehaviour:
   playerCameraRig: {fileID: 977283559}
   destination: {fileID: 1453149697}
   globalAmbienceSource: {fileID: 2101926838}
-  newAmbientSound: {fileID: 8300000, guid: 22f7303bd79e9804f8b991aa5be37aac, type: 3}
+  newAmbientSound: {fileID: 8300000, guid: d7ae63b36ccc66c408cf86b1b7b7664b, type: 3}
 --- !u!114 &1230147403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73021,7 +73021,7 @@ MonoBehaviour:
   playerCameraRig: {fileID: 977283559}
   destination: {fileID: 238887589}
   globalAmbienceSource: {fileID: 2101926838}
-  newAmbientSound: {fileID: 0}
+  newAmbientSound: {fileID: 8300000, guid: fcc1da9870cdac2449b9e1685276d875, type: 3}
 --- !u!114 &1701057986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74076,7 +74076,7 @@ MonoBehaviour:
   playerCameraRig: {fileID: 977283559}
   destination: {fileID: 651216104}
   globalAmbienceSource: {fileID: 2101926838}
-  newAmbientSound: {fileID: 0}
+  newAmbientSound: {fileID: 8300000, guid: 450268162d89b7d478dd77d4117995e7, type: 3}
 --- !u!114 &1717295003
 MonoBehaviour:
   m_ObjectHideFlags: 0
