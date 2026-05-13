@@ -5421,7 +5421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 130, y: 0, z: 17}
+  destination: {fileID: 986903062}
 --- !u!114 &127998891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10048,6 +10048,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &238887589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238887590}
+  m_Layer: 0
+  m_Name: TeleportTurtle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &238887590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238887589}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.18885137, z: -0, w: 0.9820057}
+  m_LocalPosition: {x: 9.589996, y: 4.799, z: -1.73}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1674335670}
+  m_LocalEulerAnglesHint: {x: 0, y: -21.772, z: 0}
 --- !u!1 &239776968
 GameObject:
   m_ObjectHideFlags: 0
@@ -18036,7 +18067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 180, y: 0, z: 8}
+  destination: {fileID: 986903062}
 --- !u!114 &370428546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21174,8 +21205,8 @@ GameObject:
   - component: {fileID: 460957483}
   - component: {fileID: 460957485}
   - component: {fileID: 460957484}
-  - component: {fileID: 460957487}
   - component: {fileID: 460957486}
+  - component: {fileID: 460957487}
   m_Layer: 0
   m_Name: '[BuildingBlock] ISDK_PokeInteraction'
   m_TagString: Untagged
@@ -21386,9 +21417,9 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 460957487}
-        m_TargetAssemblyTypeName: ButtonTeleport, Assembly-CSharp
-        m_MethodName: TeleportPlayer
+      - m_Target: {fileID: 1737727140}
+        m_TargetAssemblyTypeName: SkyboxChanger, Assembly-CSharp
+        m_MethodName: SetSkyboxDodo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21398,9 +21429,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1737727140}
-        m_TargetAssemblyTypeName: SkyboxChanger, Assembly-CSharp
-        m_MethodName: ToggleSkybox
+      - m_Target: {fileID: 460957487}
+        m_TargetAssemblyTypeName: ButtonTeleport, Assembly-CSharp
+        m_MethodName: TeleportPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21438,7 +21469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 28, y: 0, z: 8}
+  destination: {fileID: 986903062}
 --- !u!1 &461814439
 GameObject:
   m_ObjectHideFlags: 0
@@ -28937,6 +28968,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650403293}
   m_CullTransparentMesh: 1
+--- !u!1 &651216104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 651216105}
+  m_Layer: 0
+  m_Name: TeleportWolf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &651216105
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651216104}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.059969086, z: -0, w: 0.99820024}
+  m_LocalPosition: {x: 0.66999817, y: 5.41, z: 2.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 734799961}
+  m_LocalEulerAnglesHint: {x: 0, y: -6.876, z: 0}
 --- !u!1 &651323485
 GameObject:
   m_ObjectHideFlags: 0
@@ -32585,6 +32647,7 @@ Transform:
   - {fileID: 1196619998}
   - {fileID: 1962947207}
   - {fileID: 704421339}
+  - {fileID: 651216105}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &736683008
@@ -34015,7 +34078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 215, y: 0, z: 0}
+  destination: {fileID: 1122305976}
 --- !u!114 &770443933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39326,6 +39389,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910388778}
   m_Mesh: {fileID: -7401242698882145271, guid: a58b56821771a8342821d7c01532d2cb, type: 3}
+--- !u!1 &912373586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912373587}
+  m_Layer: 0
+  m_Name: TeleportLobby
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &912373587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912373586}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912777469
 GameObject:
   m_ObjectHideFlags: 0
@@ -42319,6 +42413,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986461241}
   m_Mesh: {fileID: 1245420712190227346, guid: a58b56821771a8342821d7c01532d2cb, type: 3}
+--- !u!1 &986903062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986903063}
+  m_Layer: 0
+  m_Name: TeleportDodo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986903063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986903062}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.22763538, z: -0, w: 0.9737465}
+  m_LocalPosition: {x: 5.941, y: 3.97, z: -3.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2072578622}
+  m_LocalEulerAnglesHint: {x: 0, y: -26.316, z: 0}
 --- !u!1 &988103502
 GameObject:
   m_ObjectHideFlags: 0
@@ -46157,7 +46282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 75, y: 0, z: 0}
+  destination: {fileID: 986903062}
 --- !u!114 &1082111415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47678,6 +47803,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pokeInteractable: {fileID: 1368101210}
   _buttonBaseTransform: {fileID: 380885567}
+--- !u!1 &1122305976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1122305977}
+  m_Layer: 0
+  m_Name: TeleportRhino
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1122305977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122305976}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.2934329, z: -0, w: 0.9559797}
+  m_LocalPosition: {x: -5.78, y: 3.99, z: -0.78}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1399266961}
+  m_LocalEulerAnglesHint: {x: 0, y: -34.127, z: 0}
 --- !u!1 &1123936686
 GameObject:
   m_ObjectHideFlags: 0
@@ -53365,7 +53521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 180, y: 1, z: 2}
+  destination: {fileID: 1453149697}
 --- !u!114 &1230147403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56788,7 +56944,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 0, y: 0, z: 0}
+  destination: {fileID: 912373586}
 --- !u!114 &1323462537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58764,6 +58920,7 @@ Transform:
   - {fileID: 1305902109}
   - {fileID: 1865056343}
   - {fileID: 169214243}
+  - {fileID: 1453149698}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1366040785
@@ -59108,7 +59265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 28, y: 0, z: 0}
+  destination: {fileID: 986903062}
 --- !u!114 &1368101213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60611,6 +60768,7 @@ Transform:
   - {fileID: 733559905}
   - {fileID: 513831160}
   - {fileID: 801046349}
+  - {fileID: 1122305977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400338866
@@ -62934,6 +63092,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446986830}
   m_Mesh: {fileID: -7401242698882145271, guid: a58b56821771a8342821d7c01532d2cb, type: 3}
+--- !u!1 &1453149697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1453149698}
+  m_Layer: 0
+  m_Name: TeleportLeo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453149698
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453149697}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.2934329, z: -0, w: 0.9559797}
+  m_LocalPosition: {x: 4.498993, y: 5.082, z: -0.90400004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1364705435}
+  m_LocalEulerAnglesHint: {x: 0, y: -34.127, z: 0}
 --- !u!1001 &1454115100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72237,6 +72426,7 @@ Transform:
   - {fileID: 1539943019}
   - {fileID: 143837454}
   - {fileID: 2014828121}
+  - {fileID: 238887590}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677296816
@@ -73097,7 +73287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 140, y: 1, z: 2}
+  destination: {fileID: 238887589}
 --- !u!114 &1701057986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74150,7 +74340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 80, y: 1, z: 3}
+  destination: {fileID: 651216104}
 --- !u!114 &1717295003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87989,6 +88179,7 @@ Transform:
   - {fileID: 692085388}
   - {fileID: 331027129}
   - {fileID: 511440122}
+  - {fileID: 986903063}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083158842
@@ -91202,7 +91393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraRig: {fileID: 977283559}
-  targetPosition: {x: 230, y: 0, z: 8}
+  destination: {fileID: 986903062}
 --- !u!114 &2127491668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92264,6 +92455,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 912373587}
   - {fileID: 1851293917}
   - {fileID: 2072578622}
   - {fileID: 734799961}

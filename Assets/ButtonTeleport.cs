@@ -2,18 +2,23 @@ using UnityEngine;
 
 public class ButtonTeleport : MonoBehaviour
 {
-    // Das ist die Kamera/der Spieler, der bewegt werden soll
     public GameObject playerCameraRig;
+    // Wir nennen es um, um Unity zum "Nachdenken" zu zwingen
+    public GameObject destination;
 
-    // Die Ziel-Koordinaten
-    public Vector3 targetPosition;
-
-    // Diese Funktion rufen wir auf, wenn der Button gedrückt wird
     public void TeleportPlayer()
     {
-        if (playerCameraRig != null)
+        if (playerCameraRig != null && destination != null)
         {
-            playerCameraRig.transform.position = targetPosition;
+            playerCameraRig.transform.position = destination.transform.position;
+            playerCameraRig.transform.rotation = destination.transform.rotation;
+            Debug.Log("Teleport zu " + destination.name + " erfolgreich!");
+        }
+        else
+        {
+            if (playerCameraRig == null) Debug.LogError("PlayerRig fehlt!");
+            if (destination == null) Debug.LogError("Destination (Empty) fehlt!");
+            Debug.LogError("Fehler bei Button: " + gameObject.name + " - Target fehlt!");
         }
     }
 }
