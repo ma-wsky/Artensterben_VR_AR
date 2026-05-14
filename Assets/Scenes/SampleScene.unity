@@ -34622,7 +34622,7 @@ MonoBehaviour:
   playerCameraRig: {fileID: 977283559}
   destination: {fileID: 1122305976}
   globalAmbienceSource: {fileID: 2101926838}
-  newAmbientSound: {fileID: 0}
+  newAmbientSound: {fileID: 8300000, guid: 93b6b5313ea45594490b8d667185efc3, type: 3}
 --- !u!114 &770443933
 MonoBehaviour:
   m_ObjectHideFlags: 0
